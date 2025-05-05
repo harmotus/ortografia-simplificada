@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Harmotus">
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="fav/favicon.svg">
+	<title>Idearium Futurismo</title>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="main">
+	<div id="top"></div>
+	<h1 style="cursor:pointer" onclick="myModo();">IDEARIUM FUTURISMO</h1>
+	<p>Una inclusiva simplificación de la ortografía en la lengua española.</p>
+	<input type="checkbox" id="myBox1" onclick="myFunction1();" checked><span>Versión 1</span> <input type="checkbox" id="myBox2" onclick="myFunction2();"><span>Versión 2</span>&nbsp; || <input type="checkbox" id="myBox3" onclick="myFunction3();"><span style="display:inline" id="myYei1">ll</span><span style="display:none" id="myYei2">k</span><span>:y</span> <input type="checkbox" id="myBox4" onclick="myFunction4();"><span>z:s</span> <input type="checkbox" id="myBox5" onclick="myFunction5();"><span>ñ:ni</span> <input type="checkbox" id="myBox6" onclick="myFunction6();"><span style="display:inline" id="myLei1">rr</span><span style="display:none" id="myLei2">vr</span><span>:l</span>&nbsp; || <input type="checkbox" id="myBoxAa"><span>A:a</span> <input type="checkbox" id="myBoxSp"><span>“¿¡”</span>
+	<p>&#8226; <a style="display:inline" id="myReg1" href="#reglas1">Reglas v1</a><a style="display:none" id="myReg2" href="#reglas2">Reglas v2</a><span style="display:none" id="myYeismo">&nbsp;&nbsp;+&nbsp; Yeísmo</span><span style="display:none" id="mySeseo">&nbsp;&nbsp;+&nbsp; Seseo</span><span style="display:none" id="myNeismo">&nbsp;&nbsp;+&nbsp; Neísmo</span><span style="display:none" id="myLeleo">&nbsp;&nbsp;+&nbsp; Leleo</span></p>
+	<p>&#8226; <span id="myLetras">22</span> letras (&nbsp;<span style="cursor:pointer" id="myListA" onclick="myList();">27 letras</span> &#8211; <span style="display:inline" id="myExt1">w.h.k.q.v</span><span style="display:none" id="myExt2">w.h.x</span><span style="display:none" id="myNok">.k</span><span style="display:none" id="myNoz">.z</span><span style="display:none" id="myNon">.ñ</span><span style="display:none" id="myNov">.v</span><span style="display:none" id="myNor">.r</span>&nbsp;) </p>
+	<p>&#8226; <span id="myFonemas">24</span> fonemas , <span id="myDigrafos">3</span> dígrafos <span id="myD1grafos">(&nbsp;ch<span style="display:inline" id="myNoll">.ll</span><span style="display:inline" id="myNorr">.rr</span>&nbsp;)</span><span id="myD2grafos"></span> , 5 tildes (&nbsp;á.é.í.ó.ú&nbsp;) , 0 diéresis (&nbsp;ü&nbsp;)</p>
+	<p id="myListB" style="display:none">&#8226; 27 letras (&nbsp;a.e.i.o.u + b.c.d.f.g.h.j.k.l.m.n.ñ.<br style="display:none" id="listBr">p.q.r.s.t.v.w.x.y.z&nbsp;)</p>
+	<form><textarea id="myInput" rows="12" cols="90" spellcheck="false" placeholder="Introducir un texto aquí y luego hacer clic en el botón 'Cambiar'"></textarea></form>
+	<br>
+	<button onclick="myChange();">Cambiar</button><span class="spanBreak1">&nbsp;</span><button onclick="myClear();">Limpiar</button><span class="spanBreak2">&nbsp;</span><button onclick="myAaTex();">A:a&nbsp;Tex</button>
+	<br><br>
+	<form><textarea id="myResult" rows="12" cols="90" spellcheck="false" placeholder="Se escribe como se pronunzia i se pronunzia como se escribe"></textarea></form>
+	<br>
+	<button onclick="mySave();">Guardar</button><span class="spanBreak1">&nbsp;</span><button id="myCopy" onclick="myCopy();">Copiar</button><span class="spanBreak2">&nbsp;</span><button onclick="myBreak();">Sílabas</button>
+	<br class="dobleBr">
+	<div id="sectionA">
+	<p><a id="reglas"></a></p>
+	<h2>REGLAS</h2>
+	<p><a id="reglas1"></a></p>
+	<h3>Reglas : Versión 1 (&nbsp;Base : Bibliografía&nbsp;)</h3>
+	<p>&#8226; 1.&nbsp; La letra 'v' se reemplaza por la letra 'b'.</p>
+	<p>&#8226; 2.&nbsp; La letra 'c' se reemplaza por la letra 'z' en las combinaciones 'ce' y 'ci'.</p>
+	<p>&#8226; 3.&nbsp; La letra fuerte 'g' se reemplaza por la letra 'j' en las combinaciones 'ge' y 'gi'.</p>
+	<p>&#8226; 4.&nbsp; El dígrafo 'gu' se reemplaza por la letra suave 'g' en las combinaciones 'gue' y 'gui'.</p>
+	<p>&#8226; 5.&nbsp; El dígrafo 'qu' se reemplaza por la letra 'c' en las combinaciones 'que' y 'qui'.</p>
+	<p>&#8226; 6.&nbsp; La letra 'q' y la letra 'k' se reemplazan por la letra 'c'.</p>
+	<p>&#8226; 7.&nbsp; La letra vocal 'y' se reemplaza por la letra vocal 'i'.</p>
+	<p>&#8226; 8.&nbsp; La letra muda 'h' y la diéresis 'ü' desaparecen.</p>
+	<p>&#8226; 9.&nbsp; La letra 'r' conserva sus reglas tradicionales.</p>
+	<p>&#8226; <a href="#top">Subir</a>&nbsp;&nbsp;<a href="#bibliografia">Base</a></p>
+	<p><a id="reglas2"></a></p>
+	<h3>Reglas : Versión 2 (&nbsp;Base : Versión 1&nbsp;)</h3>
+	<p>&#8226; 1.&nbsp; El dígrafo 'ch' se reemplaza por la letra 'h'.</p>
+	<p>&#8226; 2.&nbsp; El dígrafo 'll' se reemplaza por la letra 'k'.</p>
+	<p>&#8226; 3.&nbsp; El dígrafo 'rr' se reemplaza por la letra 'v'.</p>
+	<p>&#8226; 4.&nbsp; La letra fuerte 'r' se reemplaza por la letra 'v'.</p>
+	<p>&#8226; 5.&nbsp; La letra 'm' se reemplaza por la letra 'n' en las combinaciones 'mb', 'mp' y 'mn'.</p>
+	<p>&#8226; 6.&nbsp; La letra 'x' se reemplaza por las letras 'c','s','j' o la combinación 'cs' según el contexto.</p>
+	<p>&#8226; <a href="#top">Subir</a>&nbsp;&nbsp;<a href="#reglas1">Base</a></p>
+	<p><a id="resumen"></a></p>
+	<h2>RESUMEN</h2>
+	<p>&#8226; 1.&nbsp; La letra 'c' siempre se pronuncia como la letra 'k'. (&nbsp;v1&nbsp;) {&nbsp;letra 'c' = fonema /k/&nbsp;}</p>
+	<p>&#8226; 2.&nbsp; La letra 'g' siempre se pronuncia como la letra suave 'g'. (&nbsp;v1&nbsp;) {&nbsp;letra 'g' = fonema /g/&nbsp;}</p>
+	<p>&#8226; 3.&nbsp; La letra 'r' siempre se pronuncia como la letra suave 'r'. (&nbsp;v2&nbsp;) {&nbsp;letra 'r' = fonema /&#638;/&nbsp;}</p>
+	<p>&#8226; 4.&nbsp; La letra 'v' siempre se pronuncia como la letra fuerte 'r'. (&nbsp;v2&nbsp;) {&nbsp;letra 'v' = fonema /r/&nbsp;}</p>
+	<p>&#8226; 5.&nbsp; La letra 'k' siempre se pronuncia como el dígrafo 'll'. (&nbsp;v2&nbsp;) {&nbsp;letra 'k' = fonema /&#654;/&nbsp;}</p>
+	<p>&#8226; 6.&nbsp; La letra 'h' siempre se pronuncia como el dígrafo 'ch'. (&nbsp;v2&nbsp;) {&nbsp;letra 'h' = fonema /&#116;&#865;&#643;/&nbsp;}</p>
+	<p>&#8226; <a href="#top">Subir</a>&nbsp;&nbsp;<a href="#reglas">Base</a></p>
+	<p><a id="detalle"></a></p>
+	<h2>DETALLE</h2>
+	<p>&#8226; 1.&nbsp; El fonema /b/ puede ser representado por la letra 'b' o la letra 'v'.</p>
+	<p>&#8226; 2.&nbsp; El fonema /k/ puede ser representado por la letra 'c', la letra 'k' o la letra 'q'.</p>
+	<p>&#8226; 3.&nbsp; La versión 2 siempre debe adaptarse a las reglas establecidas por la versión 1.</p>
+	<p>&#8226; <a href="#top">Subir</a>&nbsp;&nbsp;<a href="#bibliografia">Base</a></p>
+	<p><a id="filosofia"></a></p>
+	<h2>FILOSOFÍA</h2>
+	<p>&#8226; 1.&nbsp; Se escribe como se pronuncia y se pronuncia como se escribe.</p>
+	<p>&#8226; 2.&nbsp; Toda letra denota un solo fonema (&nbsp;que es denotado por una sola letra&nbsp;)</p>
+	<p>&#8226; 3.&nbsp; Las palabras se escriben separadas en sílabas. Por ejemplo: sub.lu.nar, al.le.to, etc.</p>
+	<p>&#8226; 4.&nbsp; Las palabras pueden tener más de una sílaba tónica. Por ejemplo: tíorío, marímarí, etc.</p>
+	<p>&#8226; 5.&nbsp; Explorar la cantidad máxima de sílabas que se pueden pronunciar con los fonemas del idioma.</p>
+	<p>&#8226; 6.&nbsp; Explorar la cantidad máxima de palabras que se pueden pronunciar con las sílabas del idioma.</p>
+	<p>&#8226; <a href="#top">Subir</a>&nbsp;&nbsp;<a href="#bibliografia">Base</a></p>
+	<a id="bibliografia"></a>
+	<h2>BIBLIOGRAFÍA</h2>
+	<p>&#8226; Ensayo : Idearium Futurismo : Agustina Mercedes González López (&nbsp;1916&nbsp;)</p>
+	<p>&#8226; Ensayo : Idearium Futurismo : Agustina Mercedes González López (&nbsp;2021&nbsp;)</p>
+	<p>&#8226; Youtube : ¿Ase falta una nueba ortografía? : Karina Galperin (&nbsp;<a href="https://youtu.be/VpkneIesi60">Enlace</a>&nbsp;)</p>
+	<p>&#8226; Wiki : Alfabeto Fonético Internacional (&nbsp;<a href="https://es.wikipedia.org/wiki/Alfabeto_Fon%C3%A9tico_Internacional">Enlace</a>&nbsp;)</p>
+	<p>&#8226; RAE : Alfabeto : Letras (&nbsp;<a href="https://www.rae.es/dpd/abecedario">Enlace</a>&nbsp;)</p>
+	<p>&#8226; RAE : Fonemas (&nbsp;<a href="https://www.rae.es/ortograf%C3%ADa-b%C3%A1sica/uso-de-las-letras/los-fonemas-del-espa%C3%B1ol">Enlace</a>&nbsp;)</p>
+	<p>&#8226; <a href="#top">Subir</a></p>
+	</div>
+	<p><a id="laboratorio"></a></p>
+	<h2>LABORATORIO</h2>
+	<button onclick="myBase1();">Original</button><span class="spanBreak1">&nbsp;</span><button onclick="myBase2();">Integral</button><span class="spanBreak2">&nbsp;</span><button id="myLaboratorio" onclick="myLaboratorio();">Reducir</button>
+	<br><br>
+	<form><textarea id="myInput2" rows="12" cols="90" spellcheck="false" placeholder="Introducir un nuevo texto aquí o elegir el texto 'Original' o el texto 'Integral'"></textarea></form>
+	<br>
+	<form><textarea id="myInput3" rows="3" cols="90" spellcheck="false" placeholder="b:v,h:,c:k,ch:ck, v: r, ... Aplicar nuevas reglas aquí, luego hacer clic en 'Cambiar'"></textarea></form>
+	<br>
+	<button onclick="myChange2();">Cambiar</button><span class="spanBreak1">&nbsp;</span><button onclick="myClear2();">Limpiar</button><span class="spanBreak2">&nbsp;</span><button onclick="myAaTex2();">A:a&nbsp;Tex</button>
+	<br><br>
+	<form><textarea id="myResult2" rows="12" cols="90" spellcheck="false" placeholder="Pantalla en modo oscuro o claro : hacer clic en el Título (&nbsp;Idearium Futurismo&nbsp;)"></textarea></form>
+	<br>
+	<button onclick="mySave2();">Guardar</button><span class="spanBreak1">&nbsp;</span><button id="myCopy2" onclick="myCopy2();">Copiar</button><span class="spanBreak2">&nbsp;</span><button onclick="myBreak2();">Sílabas</button>
+	<br class="dobleBr">
+	<div id="sectionB">
+	<p><a id="proyecto"></a></p>
+	<h2>PROYECTO</h2>
+	<p>&#8226; <a href="https://github.com/harmotus/ortografia-simplificada">HOME</a></p>
+	<h2>LICENCIA</h2>
+	<p>&#8226; <a href="https://opensource.org/license/mit">MIT</a></p>
+	<h2>VERSIÓN</h2>
+	<p>&#8226; 1.0.0</p>
+	</div>
+	<p>&#8226; <a href="#top">Subir</a></p>
+	<br>
+	</div>
+	<script src="js/paneles.js"></script>
+	<script src="js/silabas.js"></script>
+	<script src="js/ortografia.js"></script>
+</body>
+</html>

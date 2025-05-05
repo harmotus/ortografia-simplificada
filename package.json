@@ -1,0 +1,52 @@
+{
+  "name": "ortografia-simplificada",
+  "version": "1.0.0",
+  "description": "Una inclusiva simplificación de la ortografía en la lengua española.",
+  "main": "js/ortografia-simplificada.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "keywords": [
+    "ortografía",
+    "inclusiva",
+    "integral",
+    "español",
+    "española",
+    "lengua",
+    "idioma",
+    "lenguaje",
+    "simplificada",
+    "simplificación",
+    "javascript",
+    "html5",
+    "css3",
+    "sílaba",
+    "sílabas",
+    "palabra",
+    "texto",
+    "hiato",
+    "diptongo",
+    "triptongo"
+  ],
+  "author": "Harmotus",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harmotus/ortografia-simplificada.git"
+  },
+  "bugs": {
+    "url": "https://github.com/harmotus/ortografia-simplificada/issues"
+  },
+  "homepage": "https://github.com/harmotus/ortografia-simplificada#readme",
+  "dependencies": {
+    "syllable-separator": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.5.0",
+    "mocha": "^11.1.0"
+  }
+}
