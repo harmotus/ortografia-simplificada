@@ -56,6 +56,8 @@ function Simplificar(texto,v,y,s,n,l,a,p) {
 	texto = texto.replace(/Ch/g,"Æý");
 	texto = texto.replace(/CH/g,"ÆÝ");
 	texto = texto.replace(/h/g,"");
+	texto = texto.replace(/Ha/g,"A").replace(/He/g,"E").replace(/Hi/g,"I").replace(/Ho/g,"O").replace(/Hu/g,"U");
+	texto = texto.replace(/Há/g,"Á").replace(/Hé/g,"É").replace(/Hí/g,"Í").replace(/Hó/g,"Ó").replace(/Hú/g,"Ú");
 	texto = texto.replace(/H/g,"");
 	texto = texto.replace(/æý/g,"ch");
 	texto = texto.replace(/Æý/g,"Ch");
