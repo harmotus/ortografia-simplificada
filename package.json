@@ -1,6 +1,6 @@
 {
   "name": "ortografia-simplificada",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Una inclusiva simplificación de la ortografía en la lengua española.",
   "main": "js/ortografia-simplificada.js",
   "directories": {
