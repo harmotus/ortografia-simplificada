@@ -4,8 +4,11 @@
 
 let texto = 'Se escribe como se pronuncia y se pronuncia como se escribe';
 let ortografia = require('../js/ortografia-simplificada.js');
-let textoIntegral = ortografia.Simplificar(texto,1,0,0,0,0,0,0);
+let textoIntegralmK = ortografia.Simplificar(texto,1,0,0,0,0,0,0,0);
+let textoIntegralmC = ortografia.Simplificar(texto,1,0,0,0,0,0,0,1);
 
-console.log(textoIntegral);
+console.log(textoIntegralmK);
+console.log(textoIntegralmC);
 
+// Se eskribe komo se pronunzia i se pronunzia komo se eskribe
 // Se escribe como se pronunzia i se pronunzia como se escribe

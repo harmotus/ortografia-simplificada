@@ -87,6 +87,10 @@ textarea {
 	height: 4.80em;
 }
 
+.Letter1, .Letter2 {
+	display: inline;
+}
+
 input[type=checkbox] {
 	margin: 0 0.27em;
 }
