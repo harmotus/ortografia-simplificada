@@ -46,13 +46,13 @@ Una inclusiva simplificación de la ortografía en la lengua española.
 
 ## RESUMEN
 
-&#8226; 1.&nbsp; La letra 'k' siempre se pronuncia como la letra 'k'. (&nbsp;v1&nbsp;) {&nbsp;letra 'k' = fonema /k/&nbsp;}
+&#8226; 1.&nbsp; La letra 'k' siempre se pronuncia como la letra común 'k'. (&nbsp;v1&nbsp;) {&nbsp;letra 'k' = fonema /k/&nbsp;}
 
 &#8226; 2.&nbsp; La letra 'g' siempre se pronuncia como la letra suave 'g'. (&nbsp;v1&nbsp;) {&nbsp;letra 'g' = fonema /g/&nbsp;}
 
 &#8226; 3.&nbsp; La letra 'r' siempre se pronuncia como la letra suave 'r'. (&nbsp;v2&nbsp;) {&nbsp;letra 'r' = fonema /&#638;/&nbsp;}
 
-&#8226; 4.&nbsp; La letra 'v' siempre se pronuncia como la letra fuerte 'r'. (&nbsp;v2&nbsp;) {&nbsp;letra 'v' = fonema /r/&nbsp;}
+&#8226; 4.&nbsp; La letra 'v' siempre se pronuncia como el dígrafo 'rr'. (&nbsp;v2&nbsp;) {&nbsp;letra 'v' = fonema /r/&nbsp;}
 
 &#8226; 5.&nbsp; La letra 'h' siempre se pronuncia como el dígrafo 'll'. (&nbsp;v2&nbsp;) {&nbsp;letra 'h' = fonema /&#654;/&nbsp;}
 
@@ -60,17 +60,17 @@ Una inclusiva simplificación de la ortografía en la lengua española.
 
 ## FONEMAS
 
-&#8226; 1.&nbsp; Alfabeto Fonético Español (&nbsp;AFE&nbsp;)
+&#8226; 1.&nbsp; Real Academia Española (&nbsp;RAE&nbsp;)
 
-&#8226; 1.&nbsp; / a , e , i , o , u , b , c , d , f , g , j , k , l , h , m , n , ñ , p , r , v , s , t , y , z /
+&#8226; 1.&nbsp; / a , e , i , o , u , b , ch , d , f , g , j , k , l , ll , m , n , ñ , p , r , rr , s , t , y , z /
 
-&#8226; 2.&nbsp; Alfabeto Fonético Internacional (&nbsp;AFI&nbsp;)
+&#8226; 2.&nbsp; Alfabeto Fonético Español (&nbsp;AFE&nbsp;)
 
-&#8226; 2.&nbsp; / a , e , i , o , u , b , &#116;&#865;&#643; , d , f , g , x , k , l , &#654; , m , n , &#626; , p , &#638; , r , s , t , &#669; , &#952; /
+&#8226; 2.&nbsp; / a , e , i , o , u , b , c , d , f , g , j , k , l , h , m , n , ñ , p , r , v , s , t , y , z /
 
-&#8226; 3.&nbsp; Real Academia Española (&nbsp;RAE&nbsp;)
+&#8226; 3.&nbsp; Alfabeto Fonético Internacional (&nbsp;AFI&nbsp;)
 
-&#8226; 3.&nbsp; / a , e , i , o , u , b , ch , d , f , g , j , k , l , ll , m , n , ñ , p , r , rr , s , t , y , z /
+&#8226; 3.&nbsp; / a , e , i , o , u , b , &#116;&#865;&#643; , d , f , g , x , k , l , &#654; , m , n , &#626; , p , &#638; , r , s , t , &#669; , &#952; /
 
 ## DETALLE
 
@@ -102,11 +102,11 @@ Una inclusiva simplificación de la ortografía en la lengua española.
 
 ## BIBLIOGRAFÍA
 
+&#8226; Ensayo : Ortografía en América : Andrés Bello y Juan García del Río (&nbsp;1823&nbsp;)
+
 &#8226; Ensayo : Idearium Futurismo : Agustina Mercedes González López (&nbsp;1916&nbsp;)
 
-&#8226; Ensayo : Idearium Futurismo : Agustina Mercedes González López (&nbsp;2021&nbsp;)
-
-&#8226; TED : ¿Ase falta una nueba ortografía? : Karina Galperin (&nbsp;[Enlace](https://youtu.be/VpkneIesi60)&nbsp;)
+&#8226; TED : ¿Ase falta una nueba ortografía? : Karina Galperín (&nbsp;[Enlace](https://youtu.be/VpkneIesi60)&nbsp;)
 
 &#8226; URL : Alfabeto Fonético Internacional (&nbsp;[Enlace](https://es.wikipedia.org/wiki/Alfabeto_Fon%C3%A9tico_Internacional)&nbsp;)
 

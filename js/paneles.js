@@ -10,6 +10,7 @@ let k = 0;
 let t = 0;
 let m = 0;
 let r = 0;
+let x = 0;
 let z = 0;
 let letras = 22;
 let fonemas = 24;
@@ -32,10 +33,10 @@ let myBoxKa = document.getElementById("myBoxKa");
 function myFunction1() {
 	if ( myBox1.checked == true ) {
 		document.getElementById("myBox2").checked = false;
-		document.getElementById("myBox3").checked = false;
-		document.getElementById("myBox4").checked = false;
-		document.getElementById("myBox5").checked = false;
-		document.getElementById("myBox6").checked = false;
+		if ( x == 0 ) { document.getElementById("myBox3").checked = false; };
+		if ( x == 0 ) { document.getElementById("myBox4").checked = false; };
+		if ( x == 0 ) { document.getElementById("myBox5").checked = false; };
+		if ( x == 0 ) { document.getElementById("myBox6").checked = false; };
 		document.getElementById("myYei2").style.display = "none";
 		document.getElementById("myYei1").style.display = "inline";
 		document.getElementById("myLei2").style.display = "none";
@@ -44,10 +45,10 @@ function myFunction1() {
 		document.getElementById("myReg1").style.display = "inline";
 		document.getElementById("myExt2").style.display = "none";
 		document.getElementById("myExt1").style.display = "inline";
-		document.getElementById("myYeismo").style.display = "none";
-		document.getElementById("mySeseo").style.display = "none";
-		document.getElementById("myNeismo").style.display = "none";
-		document.getElementById("myLeleo").style.display = "none";
+		if ( x == 0 ) { document.getElementById("myYeismo").style.display = "none"; };
+		if ( x == 0 ) { document.getElementById("mySeseo").style.display = "none"; };
+		if ( x == 0 ) { document.getElementById("myNeismo").style.display = "none"; };
+		if ( x == 0 ) { document.getElementById("myLeleo").style.display = "none"; };
 		letras = 22;
 		document.getElementById("myLetras").innerHTML = letras;
 		document.getElementById("myNoh").style.display = "none";
@@ -73,10 +74,10 @@ function myFunction1() {
 function myFunction2() {
 	if ( myBox2.checked == true ) {
 		document.getElementById("myBox1").checked = false;
-		document.getElementById("myBox3").checked = false;
-		document.getElementById("myBox4").checked = false;
-		document.getElementById("myBox5").checked = false;
-		document.getElementById("myBox6").checked = false;
+		if ( x == 0 ) { document.getElementById("myBox3").checked = false; };
+		if ( x == 0 ) { document.getElementById("myBox4").checked = false; };
+		if ( x == 0 ) { document.getElementById("myBox5").checked = false; };
+		if ( x == 0 ) { document.getElementById("myBox6").checked = false; };
 		document.getElementById("myYei1").style.display = "none";
 		document.getElementById("myYei2").style.display = "inline";
 		document.getElementById("myLei1").style.display = "none";
@@ -85,10 +86,10 @@ function myFunction2() {
 		document.getElementById("myReg2").style.display = "inline";
 		document.getElementById("myExt1").style.display = "none";
 		document.getElementById("myExt2").style.display = "inline";
-		document.getElementById("myYeismo").style.display = "none";
-		document.getElementById("mySeseo").style.display = "none";
-		document.getElementById("myNeismo").style.display = "none";
-		document.getElementById("myLeleo").style.display = "none";
+		if ( x == 0 ) { document.getElementById("myYeismo").style.display = "none"; };
+		if ( x == 0 ) { document.getElementById("mySeseo").style.display = "none"; };
+		if ( x == 0 ) { document.getElementById("myNeismo").style.display = "none"; };
+		if ( x == 0 ) { document.getElementById("myLeleo").style.display = "none"; };
 		letras = 24;
 		document.getElementById("myLetras").innerHTML = letras;
 		document.getElementById("myNoh").style.display = "none";
@@ -291,6 +292,7 @@ function myKa() {
 			document.getElementsByClassName("Letter2")[u].innerHTML = "c";
 			u = u + 1;
 		};
+		// document.getElementById("myResult2").placeholder = "Pantalla en modo oscuro o claro : hacer clic en el Título ( Idearium Futurismo )";
 		// document.getElementById("myTitle").innerHTML = "IDEARIUM FUTURISMO";
 		// document.title = "Idearium Futurismo";
 		myKaValue = 1;
@@ -307,6 +309,7 @@ function myKa() {
 			document.getElementsByClassName("Letter2")[u].innerHTML = "k";
 			u = u + 1;
 		};
+		// document.getElementById("myResult2").placeholder = "Pantalla en modo oscuro o claro : hacer clic en el Título ( Idearium Futurismo )";
 		// document.getElementById("myTitle").innerHTML = "IDEARIUM FUTURISMO";
 		// document.title = "Idearium Futurismo";
 		myKaValue = 2;
@@ -604,7 +607,7 @@ function myCookie() {
 	if ( myBoxAa.checked == true ) { a = 1 } else { a = 0 };
 	if ( myBoxSp.checked == true ) { p = 1 } else { p = 0 };
 	if ( myBoxKa.checked == true ) { k = 1 } else { k = 0 };
-	document.cookie = "ortografia=" + v + "," + y + "," + s + "," + n + "," + l + "," + a + "," + p + "," + k + "," + t + "," + m + "," + r + ",~" + "; max-age=31415926 ; path=/";
+	document.cookie = "ortografia=" + v + "," + y + "," + s + "," + n + "," + l + "," + a + "," + p + "," + k + "," + t + "," + r + "," + m + "," + x + ",~" + "; max-age=31415926 ; path=/";
 };
 // SETTING
 function mySetting() {
@@ -622,15 +625,17 @@ function mySetting() {
 		if ( settingLista[6] == 1 ) { document.getElementById("myBoxSp").checked = true ; myCookie(); };
 		if ( settingLista[7] == 1 ) { document.getElementById("myBoxKa").checked = true ; myKaValue = 1 ; myKa(); };
 		if ( settingLista[8] == 1 || settingLista[8] == 2 ) { themeValue = settingLista[8] ; myTheme(); };
-		if ( settingLista[9] == 1 ) { myModoA() ; myModoH(); };
-		if ( settingLista[10] == 1 ) { myScreen(); };
+		if ( settingLista[9] == 1 ) { myScreen(); };
+		if ( settingLista[10] == 1 ) { myModoA() ; myModoH(); };
+		if ( settingLista[11] == 1 ) { myModoA() ; myModoX(); };
 	};
 };
-// MODO K o C
+// ACCESO
 function myModoA() {
 	z = 1;
 	setTimeout(function(){z = 0;}, 45000);
 };
+// MODO K o C
 function myModoS() {
 	if ( z == 1 ) {
 		m = 0;
@@ -647,6 +652,18 @@ function myModoH() {
 		document.getElementById("LA").style.display = "none";
 		document.getElementById("LB").style.display = "none";
 		document.getElementById("KC").style.display = "none";
+	};
+};
+// SETEAR
+function myModoX() {
+	if ( z == 1 ) {
+		if ( x == 0 ) {
+			x = 1;
+			myCookie();
+		} else {
+			x = 0;
+			myCookie();
+		};
 	};
 };
 // RESPONSIVE

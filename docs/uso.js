@@ -7,8 +7,8 @@ let ortografia = require('../js/ortografia-simplificada.js');
 let textoIntegralmK = ortografia.Simplificar(texto,1,0,0,0,0,0,0,0);
 let textoIntegralmC = ortografia.Simplificar(texto,1,0,0,0,0,0,0,1);
 
-console.log(textoIntegralmK);
-console.log(textoIntegralmC);
+console.log("Modo K : " + textoIntegralmK);
+console.log("Modo C : " + textoIntegralmC);
 
-// Se eskribe komo se pronunzia i se pronunzia komo se eskribe
-// Se escribe como se pronunzia i se pronunzia como se escribe
+// Modo K : Se eskribe komo se pronunzia i se pronunzia komo se eskribe
+// Modo C : Se escribe como se pronunzia i se pronunzia como se escribe

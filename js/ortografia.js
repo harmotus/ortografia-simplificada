@@ -10,7 +10,7 @@ function Simplificar(texto,v,y,s,n,l,a,p,k) {
 	if ( l == 0 || l == 1 ) { true; } else { return false; }; // Leleo : 0 o 1
 	if ( a == 0 || a == 1 ) { true; } else { return false; }; // Mayúsculas a minúsculas : 0 o 1
 	if ( p == 0 || p == 1 ) { true; } else { return false; }; // Signos de puntuación : 0 o 1
-	if ( k == 0 || k == 1 ) { true; } else { return false; }; // Alternativa k o c : 0 o 1
+	if ( k == 0 || k == 1 ) { true; } else { return false; }; // Modo K o Modo C : 0 o 1
 	// Versión 1
 	// Tildes arreglo.
 	texto = texto.replace(/á/g,"aá").replace(/é/g,"eé").replace(/í/g,"ií").replace(/ó/g,"oó").replace(/ú/g,"uú");
