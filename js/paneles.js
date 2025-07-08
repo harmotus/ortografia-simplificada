@@ -64,6 +64,10 @@ function myFunction1() {
 		document.getElementById("myD2grafos").style.display = "none";
 		document.getElementById("myNoll").style.display = "inline";
 		document.getElementById("myNorr").style.display = "inline";
+		if ( x == 1 && document.getElementById("myBox3").checked == true ) { myFunction3(); };
+		if ( x == 1 && document.getElementById("myBox4").checked == true ) { myFunction4(); };
+		if ( x == 1 && document.getElementById("myBox5").checked == true ) { myFunction5(); };
+		if ( x == 1 && document.getElementById("myBox6").checked == true ) { myFunction6(); };
 		myCookie();
 		myFraxe();
 	} else {
@@ -103,6 +107,10 @@ function myFunction2() {
 		document.getElementById("myDigrafos").innerHTML = digrafos;
 		document.getElementById("myD2grafos").style.display = "inline";
 		document.getElementById("myD1grafos").style.display = "none";
+		if ( x == 1 && document.getElementById("myBox3").checked == true ) { myFunction3(); };
+		if ( x == 1 && document.getElementById("myBox4").checked == true ) { myFunction4(); };
+		if ( x == 1 && document.getElementById("myBox5").checked == true ) { myFunction5(); };
+		if ( x == 1 && document.getElementById("myBox6").checked == true ) { myFunction6(); };
 		myCookie();
 		myFraxe();
 	} else {
