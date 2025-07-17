@@ -19,6 +19,9 @@ let listanum = 0;
 let myKaValue = 0;
 let themeValue = 2;
 let laboratorio = 0;
+let myInputW = 810;
+let myInputH = 240;
+let myInputF = 96;
 let myBox1 = document.getElementById("myBox1");
 let myBox2 = document.getElementById("myBox2");
 let myBox3 = document.getElementById("myBox3");
@@ -604,6 +607,30 @@ function myTheme() {
 		myCookie();
 	};
 };
+// TEXTAREA
+function mySize() {
+	myInputW = document.getElementById("myInput").offsetWidth;
+	myInputH = document.getElementById("myInput").offsetHeight;
+	myTextarea();
+};
+function mySize2() {
+	myInputF = document.getElementById("myInput3").offsetHeight;
+	myTextarea();
+};
+function myTextarea() {
+	if ( myInputW < 810 ) { myInputW = 810; };
+	if ( myInputH < 240 ) { myInputH = 240; };
+	if ( myInputF < 96 ) { myInputF = 96; };
+	if ( myInputW > document.getElementById("main").offsetWidth ) { myInputW = document.getElementById("main").offsetWidth; };
+	let i = 0;
+	while ( i < 5 ) {
+		document.getElementsByTagName("textarea")[i].style.width = myInputW + "px";
+		document.getElementsByTagName("textarea")[i].style.height = myInputH + "px";
+		i = i + 1;
+	};
+	document.getElementById("myInput3").style.height = myInputF + "px";
+	myCookie();
+};
 // COOKIES
 function myCookie() {
 	if ( myBox1.checked == true ) { v = 1 };
@@ -615,7 +642,7 @@ function myCookie() {
 	if ( myBoxAa.checked == true ) { a = 1 } else { a = 0 };
 	if ( myBoxSp.checked == true ) { p = 1 } else { p = 0 };
 	if ( myBoxKa.checked == true ) { k = 1 } else { k = 0 };
-	document.cookie = "ortografia=" + v + "," + y + "," + s + "," + n + "," + l + "," + a + "," + p + "," + k + "," + t + "," + r + "," + m + "," + x + ",~" + "; max-age=31415926 ; path=/";
+	document.cookie = "ortografia=" + v + "," + y + "," + s + "," + n + "," + l + "," + a + "," + p + "," + k + "," + t + "," + r + "," + m + "," + x + "," + myInputW + "," + myInputH + "," + myInputF + ",~" + "; max-age=31415926 ; path=/";
 };
 // SETTING
 function mySetting() {
@@ -636,33 +663,36 @@ function mySetting() {
 		if ( settingLista[9] == 1 ) { myScreen(); };
 		if ( settingLista[10] == 1 ) { myModoA() ; myModoH(); };
 		if ( settingLista[11] == 1 ) { myModoA() ; myModoX(); };
+		if ( settingLista[12] !== undefined ) { myInputW = settingLista[12]; };
+		if ( settingLista[13] !== undefined ) { myInputH = settingLista[13]; };
+		if ( settingLista[14] !== undefined ) { myInputF = settingLista[14]; };
+		myTextarea();
 	};
 };
 // ACCESO
 function myModoA() {
 	z = 1;
-	setTimeout(function(){z = 0;}, 45000);
+	setTimeout(function(){z = 0;}, 15000);
 };
 // MODO K o C
-function myModoS() {
-	if ( z == 1 ) {
-		m = 0;
-		myCookie();
-		document.getElementById("LA").style.display = "inline";
-		document.getElementById("LB").style.display = "inline";
-		document.getElementById("KC").style.display = "inline";
-	};
-};
 function myModoH() {
 	if ( z == 1 ) {
-		m = 1;
-		myCookie();
-		document.getElementById("LA").style.display = "none";
-		document.getElementById("LB").style.display = "none";
-		document.getElementById("KC").style.display = "none";
+		if ( m == 0 ) {
+			m = 1;
+			myCookie();
+			document.getElementById("LA").style.display = "none";
+			document.getElementById("LB").style.display = "none";
+			document.getElementById("KC").style.display = "none";
+		} else {
+			m = 0;
+			myCookie();
+			document.getElementById("LA").style.display = "inline";
+			document.getElementById("LB").style.display = "inline";
+			document.getElementById("KC").style.display = "inline";
+		};
 	};
 };
-// SETEAR
+// RESETEAR
 function myModoX() {
 	if ( z == 1 ) {
 		if ( x == 0 ) {
@@ -693,6 +723,7 @@ function myResponsive() {
 		document.getElementsByTagName("h2")[i].style.fontSize = valueHfs * 0.70 + "px" ;
 		i = i + 1;
 	};
+	myTextarea();
 };
 // RESPONSIVE CALCULATION
 function myCalculation ( X, Xa, Xb, Ya, Yb ) {

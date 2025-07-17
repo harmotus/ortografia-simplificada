@@ -23,11 +23,11 @@
 	<p>&#8226; <span id="myLetras">22</span> letras (&nbsp;<span style="cursor:pointer" id="myListA" onclick="myList();">27 letras</span> &#8211; <span style="display:inline" id="myExt1">w.q.<span class="Letter2">c</span>.h.v</span><span style="display:none" id="myExt2">w.q.x</span><span style="display:none" id="myNoh">.h</span><span style="display:none" id="myNoz">.z</span><span style="display:none" id="myNon">.ñ</span><span style="display:none" id="myNov">.v</span><span style="display:none" id="myNor">.r</span>&nbsp;) </p>
 	<p>&#8226; <span id="myFonemas">24</span> <a style="display:inline;color:#181818;background-color:#ffffff" id="myPho" href="#fonemas">fonemas</a> , <span id="myDigrafos">3</span> dígrafos <span id="myD1grafos">(&nbsp;ch<span style="display:inline" id="myNoll">.ll</span><span style="display:inline" id="myNorr">.rr</span>&nbsp;)</span><span id="myD2grafos"></span> , 5 tildes (&nbsp;á.é.í.ó.ú&nbsp;) , 0 diéresis (&nbsp;ü&nbsp;)</p>
 	<p id="myListB" style="display:none">&#8226; 27 letras (&nbsp;a.e.i.o.u + b.c.d.f.g.h.j.k.l.m.n.ñ.<br style="display:none" id="listBr">p.q.r.s.t.v.w.x.y.z&nbsp;)</p>
-	<form><textarea id="myInput" rows="12" cols="90" spellcheck="false" placeholder="Introducir un texto aquí y luego hacer clic en el botón 'Cambiar'"></textarea></form>
+	<form><textarea id="myInput" rows="12" cols="90" spellcheck="false" placeholder="Introducir un texto aquí y luego hacer clic en el botón 'Cambiar'" onmouseup="mySize();"></textarea></form>
 	<br>
 	<button onclick="myChange();">Cambiar</button><span class="spanBreak1">&nbsp;</span><button onclick="myClear();">Limpiar</button><span class="spanBreak2">&nbsp;</span><button onclick="myAaTex();">A:a&nbsp;Tex</button>
 	<br><br>
-	<form><textarea id="myResult" rows="12" cols="90" spellcheck="false" placeholder="Se eskribe komo se pronunzia i se pronunzia komo se eskribe"></textarea></form>
+	<form><textarea id="myResult" rows="12" cols="90" spellcheck="false" placeholder="Se eskribe komo se pronunzia i se pronunzia komo se eskribe" onmouseup="mySize();"></textarea></form>
 	<br>
 	<button onclick="mySave();">Guardar</button><span class="spanBreak1">&nbsp;</span><button id="myCopy" onclick="myCopy();">Copiar</button><span class="spanBreak2">&nbsp;</span><button onclick="myBreak();">Sílabas</button>
 	<br class="dobleBr">
@@ -76,7 +76,7 @@
 	<p><a id="detalle"></a></p>
 	<h2>DETALLE</h2>
 	<p>&#8226; 1.&nbsp; El fonema /b/ está bien representado por la letra 'b'.</p>
-	<p>&#8226; 2.&nbsp; El <span style="display:inline" onclick="myModoS();">fonema</span> /k/ puede ser representado por la letra '<span class="Letter1">k</span>' o la letra '<span class="Letter2">c</span>'.</p>
+	<p>&#8226; 2.&nbsp; El fonema /k/ puede ser representado por la letra '<span class="Letter1">k</span>' o la letra '<span class="Letter2">c</span>'.</p>
 	<p>&#8226; 3.&nbsp; En la versión 2 el dígrafo 'ch' puede ser representado por la letra '<span class="Letter2">c</span>' o la letra '<span class="Letter1">k</span>'.</p>
 	<p>&#8226; <a href="#top">Subir</a>&nbsp;&nbsp;<a href="#bibliografia">Base</a></p>
 	<p><a id="filosofia"></a></p>
@@ -105,13 +105,13 @@
 	<h2>LABORATORIO</h2>
 	<button onclick="myBase1();">Original</button><span class="spanBreak1">&nbsp;</span><button onclick="myBase2();">Integral</button><span class="spanBreak2">&nbsp;</span><button id="myLaboratorio" onclick="myLaboratorio();">Reducir</button>
 	<br><br>
-	<form><textarea id="myInput2" rows="12" cols="90" spellcheck="false" placeholder="Introducir un nuevo texto aquí o elegir el texto 'Original' o el texto 'Integral'"></textarea></form>
+	<form><textarea id="myInput2" rows="12" cols="90" spellcheck="false" placeholder="Introducir un nuevo texto aquí o elegir el texto 'Original' o el texto 'Integral'" onmouseup="mySize();"></textarea></form>
 	<br>
-	<form><textarea id="myInput3" rows="3" cols="90" spellcheck="false" placeholder="b:v,h:,ch:dd,ll:x, v: r, ... Aplicar nuevas reglas aquí, luego hacer clic en 'Cambiar'"></textarea></form>
+	<form><textarea id="myInput3" rows="3" cols="90" spellcheck="false" placeholder="b:v,h:,ch:dd,ll:x, v: r, ... Aplicar nuevas reglas aquí, luego hacer clic en 'Cambiar'" onmouseup="mySize2();"></textarea></form>
 	<br>
 	<button onclick="myChange2();">Cambiar</button><span class="spanBreak1">&nbsp;</span><button onclick="myClear2();">Limpiar</button><span class="spanBreak2">&nbsp;</span><button onclick="myAaTex2();">A:a&nbsp;Tex</button>
 	<br><br>
-	<form><textarea id="myResult2" rows="12" cols="90" spellcheck="false" placeholder="Pantalla en modo oscuro o claro : hacer clic en el Título ( Idearium Futurismo )"></textarea></form>
+	<form><textarea id="myResult2" rows="12" cols="90" spellcheck="false" placeholder="Pantalla en modo oscuro o claro : hacer clic en el Título ( Idearium Futurismo )" onmouseup="mySize();"></textarea></form>
 	<br>
 	<button onclick="mySave2();">Guardar</button><span class="spanBreak1">&nbsp;</span><button id="myCopy2" onclick="myCopy2();">Copiar</button><span class="spanBreak2">&nbsp;</span><button onclick="myBreak2();">Sílabas</button>
 	<br class="dobleBr">

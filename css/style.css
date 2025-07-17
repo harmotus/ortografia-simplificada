@@ -95,12 +95,6 @@ input[type=checkbox] {
 	margin: 0 0.27em;
 }
 
-@media (min-width: 810px) {
-	textarea {
-		max-width: 810px;
-	}
-}
-
 @media (max-width: 357px) {
 	.spanBreak2 {
 		display: block;
@@ -115,8 +109,5 @@ input[type=checkbox] {
 	}
 	.dobleBr {
 		display: none;
-	}
-	h1 {
-		font-size: 1.65em;
 	}
 }
