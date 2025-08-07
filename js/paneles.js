@@ -677,7 +677,7 @@ function mySetting() {
 		if ( settingLista[12] !== undefined ) { myInputW = settingLista[12]; };
 		if ( settingLista[13] !== undefined ) { myInputH = settingLista[13]; };
 		if ( settingLista[14] !== undefined ) { myInputF = settingLista[14]; };
-		if ( settingLista[15] !== undefined ) { myArea = settingLista[15]; };
+		if ( settingLista[15] !== undefined ) { myArea = settingLista[15] ; myModoW(); };
 		myTextarea();
 	};
 };
@@ -731,6 +731,13 @@ function myModoT() {
 		myArea = 0;
 		myCookie();
 		myTextarea();
+	};
+};
+function myModoW() {
+	if ( myArea == 1 ) {
+		document.getElementById("myTxa").innerHTML = "MODO M";
+	} else {
+		document.getElementById("myTxa").innerHTML = "MODO A";
 	};
 };
 // RESPONSIVE
